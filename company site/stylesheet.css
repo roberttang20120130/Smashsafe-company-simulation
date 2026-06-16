@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #111;
+  text-align: center;
+}
+    
+.speed{
+  color: black;
+}
+.green{
+  color: white;
+}
+
+h1, h2, h3, p {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Parallax sections (we will animate background-position with JS) */
+.parallax {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg1 {
+  background-image: url('piqsels.com-id-fepkk.jpg');
+}
+.bg2 {
+  background-image: url('60.webp');
+}
+.bg3 {
+  background-image: url('hotswap-DSC04818_qsrsrv_lnp7ni.avif');
+}
+.bg4{
+    background-image: url('polling_rate_9184aae8-fa2e-46e7-a3bf-3e341dbf48ae.webp')
+}
+
+   
+
+/* Product boxes */
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #222;
+}
+
+.product {
+    background: rgba(0,0,0,0.7);
+    border: 2px solid green;
+    padding: 20px;
+    margin: 20px;
+    max-width: 350px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 80%;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #0a0;
+}
+
+/* Normal content section */
+.content {
+    background: #222;
+    padding: 50px 20px;
+}
