@@ -128,7 +128,6 @@
   </div>
 </div>
 
-
   <!-- Extra Content Section -->
   <div class="content">
     <h2>More Products Coming Soon…</h2>
@@ -150,5 +149,23 @@
       });
     });
   </script>
+
+  <h2>want to buy stocks?</h2>
+  <input type="text" placeholder="enter amount of stocks you want to buy in $"><br>
+  <a href="purchase.html?product=stocks&price=cost of stocks">
+    <button>Click here to buy</button>
+  </a><br>
+
+  <!-- ADDED QUESCODED SCRIPT (ONLY CHANGE) -->
+  <script>
+    const stockInput = document.querySelector('input[placeholder="enter amount of stocks you want to buy in $"]');
+    const stockLink = document.querySelector('a[href*="stocks"]');
+
+    stockInput.addEventListener('input', () => {
+      const value = parseFloat(stockInput.value || 0);
+      stockLink.href = `purchase.html?product=stocks&price=${value}`;
+    });
+  </script>
+
 </body>
 </html>
